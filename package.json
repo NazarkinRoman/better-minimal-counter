@@ -1,0 +1,21 @@
+{
+  "name": "better-minimal-counter",
+  "version": "0.0.1",
+  "description": "minimalistic javascript counter",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js --standalone BetterMinimalCounter | uglifyjs > dist/better-minimal-counter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nazarkin_roman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NazarkinRoman/better-minimal-counter/issues"
+  },
+  "homepage": "https://github.com/NazarkinRoman/better-minimal-counter#readme",
+  "dependencies": {
+    "classlist": "^2.0.0",
+    "domify": "^1.4.0",
+    "transform-property": "0.0.1"
+  }
+}

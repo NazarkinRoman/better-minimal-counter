@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>MinimalCounter Demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+	<link rel="stylesheet" href="./dist/better-minimal-counter.css" type="text/css" media="screen" charset="utf-8">
+	
+	<style type="text/css" media="screen">
+	  html, body{
+	    margin: 0; padding: 0;
+	    height: 100%;
+	  }
+	  
+	  .better-minimal-counter{
+	    position: relative;
+	    top: 50%;
+	    transform: translate3d(0, -50%, 0);
+	  }
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="./dist/better-minimal-counter.js"> </script>
+	<script type="text/javascript" charset="utf-8">
+		var bmc = new BetterMinimalCounter( 10000000 );
+		document.body.appendChild( bmc.el );
+
+		setInterval( function(){
+			bmc.update( Math.round( Math.random() * 10000000 ) );
+		}, 1500 );
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.better-minimal-counter {
+  font-size: 0;
+  height: 55px;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.better-minimal-counter .character {
+  display: inline-block;
+  font-size: 56px;
+  text-align: center;
+}
+
+.better-minimal-counter .sequence {
+  width: 0.55em;
+  line-height: 1;
+  transform: translate3d(0, -90%, 0);
+  transition: transform 400ms cubic-bezier(0.860, 0.000, 0.070, 1.000), width 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+.better-minimal-counter .character:last-child .sequence {
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+
+.better-minimal-counter .character.is-space .sequence {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.better-minimal-counter .sequence.is-hidden {
+  width: 1px;
+  margin-left: -1px;
+  opacity: 0;
+}
