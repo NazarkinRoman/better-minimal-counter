@@ -15,7 +15,6 @@
   "homepage": "https://github.com/NazarkinRoman/better-minimal-counter#readme",
   "dependencies": {
     "classlist": "^2.0.0",
-    "domify": "^1.4.0",
-    "transform-property": "0.0.1"
+    "domify": "^1.4.0"
   }
 }
